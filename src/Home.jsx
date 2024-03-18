@@ -3,7 +3,7 @@ import './index.css'
 
 function Home() {
   return (
-    <div id='home-container'>
+    <div className='home-credits-container'>
       <h1>Welcome to Conway&apos;s Game of Life</h1>
       <p>
         Conway&apos;s Game of Life is a cellular automaton devised by the

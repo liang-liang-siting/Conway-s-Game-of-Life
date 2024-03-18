@@ -13,7 +13,7 @@ h1 {
   padding: 0;
 }
 
-#home-container {
+.home-credits-container {
   height: 100%;
   max-width: 800px;
   margin: auto;
@@ -23,8 +23,8 @@ h1 {
 }
 
 @media (max-width: 800px) {
-  #home-container {
-    padding: 70px 40px;
+  .home-credits-container {
+    padding: 40px;
   }
 }
 
