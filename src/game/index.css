@@ -25,6 +25,17 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .attributes-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .attributes-height-width input {
+    width: 80px;
+  }
+}
+
 .controls-container {
   display: flex;
   align-items: center;
