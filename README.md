@@ -1,14 +1,49 @@
-# Siting-Liang_Guotong-Liao-Assignment2
+# Conway's Game of Life
 
-CS 5610 Project 2 Writeup 
-Siting Liang & Guotong Liao
+Conway’s Game of Life (or just Life) is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. The game is played on a grid of cells, where each cell can be either alive or dead.
 
-While working on this app, one challenge we faced was structuring the game logic to implement Conway's Game of Life effectively. We had to carefully design the grid and cell interactions to ensure proper cell births, deaths, and transitions according to the game rules. Additionally, implementing features like the heatmap mode required devising a mechanism to dynamically change cell colors based on their state and neighbors, which added complexity to the rendering logic.
+## Core Functionality
 
-Given more time, we would introduce additional features such as Longer Lasting Cells. This feature would add a toggle to the game interface, allowing cells to persist for multiple frames before dying, introducing a new dimension to the gameplay. Implementing this feature would require careful consideration of the cell lifecycle and interactions, as cells would need to navigate and survive based on specific conditions within a limited timeframe.
+Life operates based on the following rules:
 
-Another feature we would add is Clustered Setup, aiming to enhance the visual appeal and complexity of the game. This feature would introduce an algorithm to cluster cells together in interesting patterns, promoting the emergence of dynamic and visually compelling configurations within the grid. The approach would involve researching clustering algorithms and adapting them to fit the requirements of the game, enhancing the overall experience for players.
+1. A living cell with fewer than two living neighbors dies of underpopulation.
+2. A living cell with two or three live neighbors lives on to the next generation.
+3. A living cell with more than three live neighbors dies of overcrowding.
+4. A dead cell with exactly three live neighbors becomes a live cell through reproduction.
 
-While working on this assignment, we made assumptions regarding the familiarity of the audience with Conway's Game of Life and related concepts, such as cell states and transitions. Additionally, we assumed a basic understanding of React and web development principles to implement the app efficiently.
+These rules determine the state of each cell in the grid for the next iteration. 
 
-Overall, this assignment took approximately three days to complete, including planning, implementation, testing, and documentation.
+## Website Features
+
+### Grid Display
+
+- Users are presented with a 20x20 grid upon opening the game.
+- They can specify the grid's height and width within the range of 3-40 using input fields and a submit button.
+- If an invalid input is provided, an error message is displayed, prompting the user to input a valid range.
+
+### Initial Configuration
+
+- Upon creating a new grid, cells are randomly set as alive (black) or dead (white) with a 5% chance of being alive.
+- Users can click on any cell to toggle its state between alive and dead.
+
+### Heatmap Display
+
+- Users can switch between regular colors and a heatmap display.
+- The heatmap indicates how recently a cell was alive using a color gradient.
+
+### Control Buttons
+
+- Two buttons are provided below the grid:
+  - One resets the grid according to the specified height and width.
+  - The other progresses the simulation by one step.
+
+### Live Cell Counter
+
+- The number of currently living cells is displayed somewhere on the screen.
+
+## Contributors
+
+- [Siting Liang](https://github.com/liang-liang-siting) 
+
+- [Guotong Liao](https://github.com/GlintonLiao)
+
